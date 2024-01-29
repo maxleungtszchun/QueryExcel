@@ -1,6 +1,11 @@
 # QueryExcel
 Query Excel with Powershell
 
+## Installation
+```powershell
+Install-Module -Name QueryExcel -Repository PSGallery -Scope CurrentUser -Force
+```
+
 ## Getting Started / Examples
 
 ### Export data to Excel file with 2 tabs
