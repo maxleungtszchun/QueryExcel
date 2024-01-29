@@ -49,6 +49,10 @@ Query-Excel '.\salesData.xlsx' * "
         )"
 ```
 ### Import Excel file to PowerShell
+`Import-ExcelFile` applies C# library `ExcelDataReader`.
+The data in Excel sheets are assumed to be "normal" e.g., start at first row and first column.
+It runs much faster, especially for files with few hundred thousand rows, than the `Import-Excel` function in
+`ImportExcel` PowerShell library although the latter has much more functionality and flexibility.
 ```powershell
 $data = Import-ExcelFile '.\salesData.xlsx' 'first_tab'
 $data['first_tab']
