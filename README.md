@@ -33,7 +33,7 @@ Get-ExcelTopRows '.\salesData.xlsx' 'second_tab' 5
 
 ### Query the Excel file with SQLite SQL statement
 Note -override_existing_temp_db will remove the temporary SQLite database saved during the previous query of the same Excel file.
-Query-Excel depends on another PowerShell Module `PSSQLite`. Visit https://github.com/RamblingCookieMonster/PSSQLite for more details.
+`Query-Excel` depends on another PowerShell Module `PSSQLite`. Visit https://github.com/RamblingCookieMonster/PSSQLite for more details.
 ```powershell
 Query-Excel '.\salesData.xlsx' * "SELECT Region, AVG(Units) AS avg FROM salesData_first_tab GROUP BY Region"
 
