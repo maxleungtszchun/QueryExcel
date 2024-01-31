@@ -1,6 +1,10 @@
 # QueryExcel
 Query Excel with Powershell
 
+All commands in this module does not require the installation of Microsoft Excel.
+This module can be run on MacOS, Linux, and Windows.
+Both Arm and x86 CPU architectures are supported.
+
 ## Installation
 ```powershell
 Install-Module -Name QueryExcel -Repository PSGallery -Scope CurrentUser -Force
